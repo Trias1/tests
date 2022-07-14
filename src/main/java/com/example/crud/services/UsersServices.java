@@ -22,8 +22,6 @@ public class UsersServices {
         }else {
             UsersModel usersModel = new UsersModel();
             usersModel.setLogin(login);
-            usersModel.setPassword(password);
-            usersModel.setEmail(email);
             return userRepository.save(usersModel);
         }
     }
